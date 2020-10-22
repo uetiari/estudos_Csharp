@@ -16,9 +16,7 @@ namespace UdemyCourse {
             
             //int a = 10;
             //int b = ++a;
-            //primeiro incrementa A e depois passa valor para B. Sendo A e B = 11
-            
-            
+            //primeiro incrementa A e depois passa valor para B. Sendo A e B = 11        
             
         }
     }

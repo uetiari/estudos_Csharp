@@ -5,7 +5,9 @@ namespace Course {
     class Program {
         static void Main (string[] args){
             
-            double xA, xB, xC, yA, yB, yC;
+            Triangule x, y;
+            x = new Triangule();
+            y = new Triangule();
             
             Console.WriteLine("Entre com as medidas do triângulo X:");
             xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -17,12 +19,9 @@ namespace Course {
             yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             
-            double p = (xA + xB + xC) / 2.0;
-            double areaX = Math.Sqrt(p *(p-xA)*(p-xB)*(p-xC));
-            
-            p = (yA + yB + yC) / 2.0;
-            double areaY = Math.Sqrt(p *(p-yA)*(p-yB)*(p-yC));
-            
+            double areaX = x.Area();
+            double areaY = y.Area();
+                        
             Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
             Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
             
@@ -32,6 +31,5 @@ namespace Course {
                 Console.WriteLine("Maior área: Y");
             }
         }
-        
     }
 }
